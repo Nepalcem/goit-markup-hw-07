@@ -20,13 +20,13 @@
   <header>
     <div class="container">
       <a class="logo" href="index.html">
-        <span class="web">Web</span><span class="studio">Studio</span>
+        <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
       </a>
       <nav>
         <ul class="menu">
-          <li class="menu-item"><a href="index.html">Studio</a></li>
-          <li class="menu-item active"><a href="portfolio.html">Portfolio</a></li>
-          <li class="menu-item"><a href="">Contacts</a></li>
+          <li class="menu__item"><a href="index.html">Studio</a></li>
+          <li class="menu__item menu__item--active"><a href="portfolio.html">Portfolio</a></li>
+          <li class="menu__item"><a href="">Contacts</a></li>
         </ul>
       </nav>
       <ul class="contacts">
@@ -189,7 +189,7 @@
     <div class="footer container">
       <div class="footer-column footer-main">
         <a class="logo" href="index.html">
-          <span class="web">Web</span><span class="studio">Studio</span>
+          <span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span>
         </a>
 
         <address>Kyiv, Khreshchatyk str. 1, 55</address>
@@ -234,7 +234,8 @@
       <div class="footer-form">
         <h3>Subscribe to our Newsletter</h3>
         <form name="subscription">
-          <input type="email" name="subscription-email" placeholder="E-mail">
+          <input type="email" name="subscription-email" placeholder="E-mail" id="subscription-email">
+          <label for="subscription-email"></label>
           <button class="button footer-button" type="submit"><span class="icon-text">Subscribe</span>
             <svg class="subscribe-icon">
               <use href="images/icons.svg#icon-send-converted"></use>

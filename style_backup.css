@@ -50,27 +50,25 @@ body {
   font-size: 26px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  font-style: normal;
 }
 
-.logo__web {
+.web {
   color: var(--brand-color);
 }
-.logo__studio {
+.studio {
   color: black;
 }
-.logo__studio--footer {
+footer .studio {
+  color: white;
+}
+address {
   color: white;
 }
 
 /*menu */
-.menu {
-  display: flex;
-}
-.menu__item a {
-  display: block;
-  padding-top: 8px;
-  padding-bottom: 8px;
+
+.menu a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1em;
@@ -78,18 +76,17 @@ body {
   color: var(--black-color);
   transition: var(--color-transition);
 }
-.menu__item a:hover,
-.menu__item a:focus {
+.menu li a:hover,
+.menu li a:focus {
   color: var(--brand-color);
 }
-.menu__item--active {
+.menu .active a {
   color: var(--brand-color);
 }
-.menu__item {
+.menu-item {
   position: relative;
-  margin-right: 50px;
 }
-.menu__item a::after {
+.menu-item a::after {
   content: '';
   position: absolute;
   left:0;
@@ -101,9 +98,9 @@ body {
   transition: var(--transform-transition);
 }
 
-.menu__item a:hover::after,
-.menu__item a:focus::after,
- .menu__item--active a::after {
+.menu-item a:hover::after,
+.menu-item a:focus::after,
+ .active a::after {
   content: '';
   position: absolute;
   left:0;
@@ -114,10 +111,14 @@ body {
   border-radius: 2px;
   transform: scaleX(1);
 }
-.menu__item:last-child {
+.menu .menu-item:last-child {
   margin-right: 0;
 }
-
+.menu-item a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 /* header links */
 .contacts a {
@@ -139,11 +140,6 @@ body {
 address {
   font-style: normal;
 }
-/*footer.scss*/ 
-address {
-  color: white;
-}
-/*footer.scss*/ 
 address p {
   font-size: 14px;
   line-height: 1.5em;
@@ -165,12 +161,11 @@ footer {
   color: var(--brand-color);
 }
 
-/* ??? */
 .footer-column .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
-/* ???? */
+
 .footer .contacts {
   display: flex;
   flex-direction: column;
@@ -489,15 +484,20 @@ header {
   padding-right: 15px;
   margin: auto;
 }
+.logo {
+  margin-right: 93px;
+}
 header .container {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
 }
+.menu,
 .contacts {
   display: flex;
 }
+.menu li,
 .contacts li {
   margin-right: 50px;
 }
