@@ -1,7 +1,7 @@
 $colors : (
     'accent': #2196f3,
     'theme-black': #212121,
-    'grey': #757575,
+    'theme-grey': #757575,
     'background-dark': #2f303a,
     'background-light': #f5f4fa,
     'icon-grey-color': #afb1b8,
@@ -21,6 +21,12 @@ $transitions: (
   @function getTransition($key) {
     @return map-get($transitions, $key);
   }
+
+@mixin font-options($size,$line-height,$letter-spacing) {
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
 
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;

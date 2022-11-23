@@ -17,7 +17,7 @@
 
 <body>
   <!-- Header -->
-  <header>
+  <header class="main-header">
     <div class="container">
       <a class="logo" href="index.html">
         <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
@@ -31,7 +31,7 @@
       </nav>
       <ul class="contacts">
         <li>
-          <a href="mailto:info@devstudio.com">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
             <svg class="icon-small">
               <use href="images/icons.svg#envelope"></use>
             </svg>
@@ -39,7 +39,7 @@
           </a>
         </li>
         <li>
-          <a href="tel:+380961111111">
+          <a class="contacts__link" href="tel:+380961111111">
             <svg class="icon-small">
               <use href="images/icons.svg#smartphone"></use>
             </svg>
@@ -54,7 +54,7 @@
     <!-- Banner -->
     <section class="banner">
       <div class="container">
-        <h1>Effective solutions for <br> your business</h1>
+        <h1 class="banner__title">Effective solutions for <br> your business</h1>
         <button class="button" type="button" data-modal-open>Order Service</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -397,9 +397,9 @@
         </a>
 
         <address>Kyiv, Khreshchatyk str. 1, 55</address>
-        <ul class="contacts">
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contacts contacts--footer">
+          <li><a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
       <div class="footer-social">
@@ -440,7 +440,7 @@
         <form name="subscription">
           <input type="email" name="subscription-email" placeholder="E-mail" id="subscription-email">
           <label for="subscription-email"></label>
-          <button class="button footer-button" type="submit"><span class="icon-text">Subscribe</span>
+          <button class="button button--footer" type="submit"><span class="icon-text">Subscribe</span>
             <svg class="subscribe-icon">
               <use href="images/icons.svg#icon-send-converted"></use>
             </svg>
