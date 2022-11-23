@@ -14,16 +14,21 @@ body {
   text-decoration: none;
 }
 
-.contacts li, .menu__item {
+.property-item, .contacts li, .menu__item {
   list-style: none;
 }
 
-.contacts, .menu {
+.property, .contacts, .menu {
   margin: 0;
   padding: 0;
 }
 
-.innermodal__title, .banner__title {
+.property-item__text {
+  margin: 0;
+  padding: 0;
+}
+
+.property-item__title, .innermodal__title, .banner__title {
   margin: 0;
   padding: 0;
 }
@@ -342,4 +347,45 @@ main section:not(.banner) {
 .form-element__checkbox-hidden-input:checked + .form-element__checkbox-icon {
   background-color: #2196f3;
   border-color: #2196f3;
+}
+
+.properties {
+  padding-top: 94px;
+}
+
+.property {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.property-item__icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.property-item__icon svg {
+  width: 70px;
+  height: 70px;
+}
+.property-item__title {
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #212121;
+}
+.property-item__text {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */

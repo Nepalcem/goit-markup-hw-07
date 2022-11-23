@@ -416,7 +416,7 @@ footer {
 }
 
 /* property items */
-.property-item h3 {
+.property-item__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1em;
@@ -425,17 +425,14 @@ footer {
   color: var(--black-color);
   margin-bottom: 10px;
 }
-.property-item p {
+.property-item__text {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
 
-.folio {
-  padding-top: 94px;
-}
-.properties {
+.folio, .regular-clients, .properties {
   padding-top: 94px;
 }
 
@@ -570,7 +567,7 @@ footer {
 /* svg styling */
 
 
-.property-icon {
+.property-item__icon {
   width: 270px;
   height: 120px;
   background-color: var(--background-color-white);
@@ -579,7 +576,7 @@ footer {
   align-items: center;
   margin-bottom: 30px;
 }
-.property-icon svg {
+.property-item__icon svg {
   width: 70px;
   height: 70px;
 }
@@ -642,9 +639,7 @@ footer {
 .customer-icon:focus {
   color: var(--brand-color);
 }
-.regular-clients {
-  padding-top: 94px;
-}
+
 .footer-social .member-social {
   gap: 10px;
 }
