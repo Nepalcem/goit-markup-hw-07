@@ -22,12 +22,6 @@ $transitions: (
     @return map-get($transitions, $key);
   }
 
-@mixin font-options($size,$line-height,$letter-spacing) {
-  font-size: $size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-}
-
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: getColor(theme-black);

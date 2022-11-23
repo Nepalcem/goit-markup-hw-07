@@ -57,46 +57,45 @@
         <h1 class="banner__title">Effective solutions for <br> your business</h1>
         <button class="button" type="button" data-modal-open>Order Service</button>
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
+          <div class="modal-box">
             <button class="modal-close" data-modal-close>
               <svg class="close">
                 <use href="images/icons.svg#close"></use>
               </svg>
             </button>
             <div class="innermodal">
-              <h2 class="modal-title">Leave your contact details. We'll call back.</h2>
+              <h2 class="innermodal__title">Leave your contact details. We'll call back.</h2>
               <form name="call-form">
                 <div class="form-element">
-                  <label class="form-label" for="name">Name</label>
-                  <input class="input-field" type="text" name="name" id="name">
-                  <svg class="input-icon">
+                  <label class="form-element__label" for="name">Name</label>
+                  <input class="form-element__input" type="text" name="name" id="name">
+                  <svg class="form-element__input-icon">
                     <use href="images/icons.svg#person_compressed"></use>
                   </svg>
                 </div>
                 <div class="form-element">
-                  <label class="form-label" for="phone">Phone</label>
-                  <input class="input-field" type="tel" name="phone" id="phone">
-                  <svg class="input-icon">
+                  <label class="form-element__label" for="phone">Phone</label>
+                  <input class="form-element__input" type="tel" name="phone" id="phone">
+                  <svg class="form-element__input-icon">
                     <use href="images/icons.svg#phone_compressed"></use>
                   </svg>
                 </div>
                 <div class="form-element">
-                  <label class="form-label" for="email">E-mail</label>
-                  <input class="input-field" type="email" name="email" id="email">
-                  <svg class="input-icon">
+                  <label class="form-element__label" for="email">E-mail</label>
+                  <input class="form-element__input" type="email" name="email" id="email">
+                  <svg class="form-element__input-icon">
                     <use href="images/icons.svg#email_compressed"></use>
                   </svg>
                 </div>
-                <div class="form-element text-input">
-                  <label class="form-label" for="message">Comment:</label>
-                  <textarea class="input-field message" name="message" id="message" rows="5"
+                <div class="form-element">
+                  <label class="form-element__label" for="message">Comment:</label>
+                  <textarea class="form-element__input form-element__input--message" name="message" id="message" rows="5"
                     placeholder="Enter text"></textarea>
                 </div>
                 <div class="form-element">
-
-                  <label class="form-checkbox">I agree with mailing and accept <a href="#">Terms of agreement</a>
-                    <input type="checkbox" name="agreement" class="checkbox-hidden">
-                    <svg class="checkbox-icon">
+                  <label class="form-element__checkbox-hidden-label">I agree with mailing and accept <a class="form-element__link" href="#">Terms of agreement</a>
+                    <input type="checkbox" name="agreement" class="form-element__checkbox-hidden-input">
+                    <svg class="form-element__checkbox-icon">
                       <use href="images/icons.svg#icon-check_c"></use>
                     </svg>
                   </label>
