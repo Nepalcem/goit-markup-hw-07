@@ -151,7 +151,6 @@ body {
 main section:not(.banner) {
   padding-bottom: 94px;
 }
-.business h2,
 .team h2,
 .regular-clients h2 {
   text-align: center;
@@ -454,22 +453,16 @@ footer {
 }
 
 /* business section */
-.business h2 {
+.business__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17em;
   letter-spacing: 0.03em;
   color: var(--black-color);
   margin-bottom: 50px;
+  text-align: center;
 }
-.examples {
-  display: flex;
-  justify-content: space-between;
-}
-.examples img {
-  flex-basis: 370px;
-}
-.members {
+.business__examples {
   display: flex;
   justify-content: space-between;
 }
@@ -478,11 +471,20 @@ footer {
   display: flex;
   justify-content: center;
 }
-.work-title {
+.work-example__image {
+  flex-basis: 370px;
+}
+.work-example__title {
   position: absolute;
   left:50%;
   bottom:27px;
   transform: translate(-50%);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 .work-example::before{
   content: '';
@@ -492,21 +494,17 @@ footer {
   background-color: rgba(47, 48, 58, 0.8);
   height: 70px;
 }
-.business h3 {
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16/14);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
+
 /*our team */
 
 .team {
   background-color: var(--background-color-white);
   padding-top: 94px;
 }
-
+.members {
+  display: flex;
+  justify-content: space-between;
+}
 .team h2,
 .regular-clients h2 {
   font-weight: 700;

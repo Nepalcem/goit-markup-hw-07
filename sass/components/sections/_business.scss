@@ -1,0 +1,41 @@
+.business__title {
+    font-weight: 700;
+    @include font-options(36px,1.17em,0.03em);
+    color: getColor(theme-black);
+    @extend %heading;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.business__examples {
+    display: flex;
+    justify-content: space-between;
+    @extend %list;
+}
+.work-example {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @extend %list-item;
+    &__image {
+        flex-basis: 370px;
+    }
+    &__title {
+        @extend %heading;
+        position: absolute;
+        left:50%;
+        bottom:27px;
+        transform: translate(-50%);
+        @include font-options(14px,calc(16/14),0.03em);
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom:0;
+        background-color: rgba(47, 48, 58, 0.8);
+        height: 70px;
+    }
+}
