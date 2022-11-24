@@ -310,8 +310,8 @@ main section:not(.banner) {
 
 
 
-/* filter-buttons */
-.filter-button {
+/* filters__buttons */
+.filters__button {
   padding: 6px 22px;
   background-color: var(--background-color-white);
   border-radius: 4px;
@@ -326,8 +326,8 @@ main section:not(.banner) {
   color: var(--black-color);
   transition: var(--background-transition), var(--color-transition),var(--shadow-transition);
 }
-.filter-button:hover,
-.filter-button:focus {
+.filters__button:hover,
+.filters__button:focus {
   background-color: var(--brand-color);
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -345,27 +345,25 @@ main section:not(.banner) {
 
 
 /* projects */
-.project img {
-  display: block;
-}
+
 .project-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
 }
-.project h2 {
+.project__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
   color: var(--black-color);
 }
-.project-descr {
+.project__description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.proj-desc {
+.project__sub-title {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
@@ -382,14 +380,17 @@ main section:not(.banner) {
 }
 
 /* project overlays */
-.img-overlay {
+.project__img-overlay {
   position: relative;
   overflow: hidden;
 }
-.project:hover .moved {
+.project img {
+  display: block;
+}
+.project:hover .project__overlay-text {
   transform: translateY(0);
 }
-.moved {
+.project__overlay-text {
   position: absolute;
   bottom:0;
   left:0;
@@ -542,13 +543,11 @@ main section:not(.banner) {
   display: flex;
 }
 
-
 .hidden-title {
   justify-content: center;
+
 }
-
 /* svg styling */
-
 
 .property-item__icon {
   width: 270px;
