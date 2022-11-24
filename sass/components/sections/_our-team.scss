@@ -3,11 +3,7 @@
     padding-top: 94px;
     &__title {
         @extend %heading;
-        font-weight: 700;
-        @include font-options(36px,1.17em,0.03em);
-        color: getColor(theme-black);
-        margin-bottom: 50px;
-        text-align: center;
+        @extend %h2;
     }
 }
 .members {

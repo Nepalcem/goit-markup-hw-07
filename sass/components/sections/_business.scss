@@ -1,10 +1,6 @@
 .business__title {
-    font-weight: 700;
-    @include font-options(36px,1.17em,0.03em);
-    color: getColor(theme-black);
     @extend %heading;
-    margin-bottom: 50px;
-    text-align: center;
+    @extend %h2;
 }
 .business__examples {
     display: flex;

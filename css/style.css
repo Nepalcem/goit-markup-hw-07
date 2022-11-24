@@ -494,7 +494,7 @@ footer {
   justify-content: space-between;
 }
 .team__title,
-.regular-clients h2 {
+.regular-clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17em;
@@ -607,9 +607,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.client-block a {
- /* width: 170px;
-  height: 92px; */
+.client-block__icon {
   padding: 23px 42px;
   border: 1px solid var(--icon-gray-color);
   border-radius: 3px;
@@ -617,25 +615,19 @@ footer {
   justify-content: center;
   align-items: center;
   transition: var(--color-transition), var(--border-transition);
-}
-.customer-icon:hover {
-  border-color: var(--brand-color);
-  fill: var(--brand-color);
-}
-.customer-icon {
   color: var(--icon-gray-color);
 }
-.customer-icon svg {
+.client-block__icon:hover,
+.client-block__icon:focus {
+  border-color: var(--brand-color);
+  fill: var(--brand-color);
+  color: var(--brand-color);
+}
+.client-block__svg {
   height: 52px;
   width: 94px;
   fill: currentColor;
 }
-.customer-icon:hover,
-.customer-icon:focus {
-  color: var(--brand-color);
-}
-
-
 
 /* footer form styling */
 
