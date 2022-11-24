@@ -151,10 +151,6 @@ body {
 main section:not(.banner) {
   padding-bottom: 94px;
 }
-.team h2,
-.regular-clients h2 {
-  text-align: center;
-}
 .banner {
   background-color: var(--background-color);
   background-image: linear-gradient(
@@ -442,15 +438,7 @@ footer {
 .property-item {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
-.info {
-  margin-top: 30px;
-}
-.info .name {
-  margin-bottom: 10px;
-}
-.card {
-  padding-bottom: 30px;
-}
+
 
 /* business section */
 .business__title {
@@ -505,7 +493,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.team h2,
+.team__title,
 .regular-clients h2 {
   font-weight: 700;
   font-size: 36px;
@@ -513,31 +501,33 @@ footer {
   letter-spacing: 0.03em;
   color: var(--black-color);
   margin-bottom: 50px;
+  text-align: center;
 }
-.team .name {
+.tmember-card__name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
   color: var(--black-color);
 }
-.team .position {
+.tmember-card__position {
   font-size: 16px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
   color: var(--grey-color);
-}
-.info .position {
   margin-bottom: 16px;
 }
-.card {
+.tmember-card {
+  padding-bottom: 30px;
   background-color: white;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.info {
+.tmember-card__info {
   text-align: center;
+  margin-top: 30px;
 }
 /* header */
 .main-header {
@@ -579,12 +569,12 @@ footer {
   height: 70px;
 }
 
-.member-social {
+.social-icons {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.member-social a {
+.social-icons__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -595,12 +585,12 @@ footer {
   transition: var(--background-transition), var(--fill-transition);
 }
 
-.member-social svg {
+.social-icons__icon {
   width: 20px;
   height: 20px;
 }
-.member-social a:hover, 
-.member-social a:focus {
+.social-icons__link:hover, 
+.social-icons__link:focus {
   background-color: var(--brand-color);
   border-radius: 50%;
   fill: white;
@@ -638,17 +628,17 @@ footer {
   color: var(--brand-color);
 }
 
-.footer-social .member-social {
+.footer-social .social-icons {
   gap: 10px;
 }
-.footer-social .member-social a {
+.footer-social .social-icons__link {
   fill: white;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: var(--background-transition);
 }
-.footer-social .member-social a:hover,
-.footer-social .member-social a:focus {
+.footer-social .social-icons__link:hover,
+.footer-social .social-icons__link:focus {
   background-color: var(--brand-color);
   border-radius: 50%;
 }
@@ -656,7 +646,7 @@ footer {
 
 /* footer form styling */
 
-.footer-form input {
+.subscription__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -671,7 +661,7 @@ footer {
   outline: none;
   transition: var(--border-transition);
 }
-.footer-form input:focus {
+.subscription__input:focus {
   border-color: var(--brand-color);
 }
 
