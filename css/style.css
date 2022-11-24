@@ -595,6 +595,15 @@ footer {
   border-radius: 50%;
   fill: white;
 }
+.social-icons--footer {
+  gap: 10px;
+}
+.social-icons__link--footer {
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: var(--background-transition);
+}
 
 .client-block {
   display: flex;
@@ -628,20 +637,6 @@ footer {
   color: var(--brand-color);
 }
 
-.footer-social .social-icons {
-  gap: 10px;
-}
-.footer-social .social-icons__link {
-  fill: white;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: var(--background-transition);
-}
-.footer-social .social-icons__link:hover,
-.footer-social .social-icons__link:focus {
-  background-color: var(--brand-color);
-  border-radius: 50%;
-}
 
 
 /* footer form styling */

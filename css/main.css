@@ -14,21 +14,21 @@ body {
   text-decoration: none;
 }
 
-.work-example, .property-item, .contacts li, .menu__item {
+.tmember-card, .work-example, .property-item, .contacts li, .menu__item {
   list-style: none;
 }
 
-.business__examples, .property, .contacts, .menu {
+.members, .business__examples, .property, .contacts, .menu {
   margin: 0;
   padding: 0;
 }
 
-.property-item__text {
+.tmember-card__position, .tmember-card__name, .property-item__text {
   margin: 0;
   padding: 0;
 }
 
-.work-example__title, .business__title, .property-item__title, .innermodal__title, .banner__title {
+.team__title, .work-example__title, .business__title, .property-item__title, .innermodal__title, .banner__title {
   margin: 0;
   padding: 0;
 }
@@ -432,4 +432,49 @@ main section:not(.banner) {
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
   height: 70px;
+}
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+}
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tmember-card {
+  padding-bottom: 30px;
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.tmember-card__info {
+  text-align: center;
+  margin-top: 30px;
+}
+.tmember-card__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: #212121;
+}
+.tmember-card__position {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */
