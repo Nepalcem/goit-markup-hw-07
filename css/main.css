@@ -10,7 +10,7 @@ body {
   margin: auto;
 }
 
-.form-element__link, .contacts__link, .menu__item a, .logo {
+.social-icons__link, .form-element__link, .contacts__link, .menu__item a, .logo {
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ body {
   list-style: none;
 }
 
-.members, .business__examples, .property, .contacts, .menu {
+.social-icons, .members, .business__examples, .property, .contacts, .menu {
   margin: 0;
   padding: 0;
 }
@@ -477,4 +477,36 @@ main section:not(.banner) {
   line-height: 1.19em;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-icons__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+}
+.social-icons__link:hover, .social-icons__link:focus {
+  background-color: #2196f3;
+  fill: white;
+  border-radius: 50%;
+}
+.social-icons--footer {
+  gap: 10px;
+}
+.social-icons__link--footer {
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }/*# sourceMappingURL=main.css.map */

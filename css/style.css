@@ -601,8 +601,6 @@ footer {
 .social-icons__link--footer {
   fill: white;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: var(--background-transition);
 }
 
 .client-block {
