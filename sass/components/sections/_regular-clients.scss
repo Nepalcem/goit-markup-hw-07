@@ -8,7 +8,9 @@
 .client-block {
     display: flex;
     justify-content: space-between;
+    @extend %list;
     &__icon {
+        @extend %link;
         padding: 23px 42px;
         border: 1px solid getColor(icon-grey-color);
         border-radius: 3px;

@@ -297,10 +297,8 @@ footer {
   gap: 70px;
   padding: 60px 0;
 }
-.footer-social h3, .footer-form h3 {
+.footer-social h3, .footer-form__title {
   color: white;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14em;
@@ -650,11 +648,11 @@ footer {
   border-color: var(--brand-color);
 }
 
-.subscribe-icon {
+.subscription__icon {
   width:24px;
   height:24px;
 }
-.icon-text {
+.subscription__text {
   margin-right: 10px;
 }
 .subscription {
