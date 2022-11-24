@@ -28,7 +28,7 @@ body {
   padding: 0;
 }
 
-.footer-form__title, .regular-clients__title, .team__title, .work-example__title, .business__title, .property-item__title, .innermodal__title, .banner__title {
+.footer-social__title, .footer-form__title, .regular-clients__title, .team__title, .work-example__title, .business__title, .property-item__title, .innermodal__title, .banner__title {
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,7 @@ body {
   text-align: center;
 }
 
-.footer-form__title {
+.footer-social__title, .footer-form__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -66,6 +66,10 @@ body {
 }
 .logo__studio--footer {
   color: #fff;
+}
+.logo--footer {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .menu {
@@ -133,6 +137,14 @@ body {
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
   fill: #2196f3;
+}
+.contacts--footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+.contacts--footer > li {
+  margin-bottom: 9px;
 }
 
 .main-header {
@@ -572,8 +584,23 @@ main section:not(.banner) {
 }
 
 .footer {
+  background-color: #212121;
+}
+.footer .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
-  padding: 60px 0;
+  padding: 60px 15px;
+  justify-content: space-between;
+}
+.footer__address {
+  color: white;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.footer-social__title {
+  color: white;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

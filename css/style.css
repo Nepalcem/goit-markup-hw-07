@@ -260,26 +260,23 @@ main section:not(.banner) {
 
 
 /* ??? */
-.footer-column .logo {
+.logo--footer {
   display: inline-block;
   margin-bottom: 20px;
 }
 /* ???? */
-address {
+.footer__address {
+  color: white;
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 /*footer.scss*/ 
-address {
-  color: white;
-}
+
 /*footer.scss*/ 
-address p {
-  font-size: 14px;
-  line-height: 1.5em;
-  letter-spacing: 0.03em;
-  color: white;
-}
-footer {
+
+.footer {
   background-color: var(--background-color);
 }
 
@@ -288,16 +285,16 @@ footer {
   flex-direction: column;
   margin-top: 9px;
 }
-.contacts--footer li:first-child {
+.contacts--footer > li {
   margin-bottom: 9px;
 }
-.footer {
+.footer .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
-  padding: 60px 0;
+  padding: 60px 15px;
+  justify-content: space-between;
 }
-.footer-social h3, .footer-form__title {
+.footer-social__title, .footer-form__title {
   color: white;
   font-weight: 700;
   font-size: 14px;
