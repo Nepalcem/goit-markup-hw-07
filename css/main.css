@@ -10,25 +10,25 @@ body {
   margin: auto;
 }
 
-.client-block__icon, .social-icons__link, .form-element__link, .contacts__link, .menu__item a, .logo {
+.project__link, .client-block__icon, .social-icons__link, .form-element__link, .contacts__link, .menu__item a, .logo {
   text-decoration: none;
 }
 
-.tmember-card, .work-example, .property-item, .contacts li, .menu__item {
+.project, .filters__list-item, .tmember-card, .work-example, .property-item, .contacts li, .menu__item {
   list-style: none;
 }
 
-.client-block, .social-icons, .members, .business__examples, .property, .contacts, .menu {
+.project-items, .filters, .client-block, .social-icons, .members, .business__examples, .property, .contacts, .menu {
   margin: 0;
   padding: 0;
 }
 
-.tmember-card__position, .tmember-card__name, .property-item__text {
+.project__sub-title, .project__overlay-text, .tmember-card__position, .tmember-card__name, .property-item__text {
   margin: 0;
   padding: 0;
 }
 
-.footer-social__title, .footer-form__title, .regular-clients__title, .team__title, .work-example__title, .business__title, .property-item__title, .innermodal__title, .banner__title {
+.project__title, .footer-social__title, .footer-form__title, .regular-clients__title, .team__title, .work-example__title, .business__title, .property-item__title, .innermodal__title, .banner__title {
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,7 @@ body {
   text-align: center;
 }
 
-.footer-social__title, .footer-form__title {
+.footer-social__title, .footer-form__title, .work-example__title, .property-item__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -70,6 +70,7 @@ body {
 .logo--footer {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .menu {
@@ -405,11 +406,6 @@ main section:not(.banner) {
   height: 70px;
 }
 .property-item__title {
-  font-size: 14px;
-  line-height: 1em;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 10px;
   color: #212121;
 }
@@ -438,12 +434,7 @@ main section:not(.banner) {
   left: 50%;
   bottom: 27px;
   transform: translate(-50%);
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
   color: white;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .work-example::before {
   content: "";
@@ -603,4 +594,90 @@ main section:not(.banner) {
 .footer-social__title {
   color: white;
   margin-bottom: 20px;
+}
+
+.folio {
+  padding-top: 94px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+.filters__button {
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filters__button:hover, .filters__button:focus {
+  background-color: #2196f3;
+  color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.project {
+  background: white;
+  width: calc((100% - 60px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project__img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.project__image {
+  display: block;
+}
+.project__overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.3333333333;
+  letter-spacing: 0.03em;
+  color: white;
+}
+.project:hover .project__overlay-text {
+  transform: translateY(0);
+}
+.project__description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.project__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.project__sub-title {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */

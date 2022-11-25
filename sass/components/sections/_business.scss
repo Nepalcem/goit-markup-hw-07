@@ -17,14 +17,13 @@
     }
     &__title {
         @extend %heading;
+        @extend %h3;
         position: absolute;
         left:50%;
         bottom:27px;
         transform: translate(-50%);
-        @include font-options(14px,calc(16/14),0.03em);
         color: white;
-        font-weight: 700;
-        text-transform: uppercase;
+        
     }
     &::before {
         content: '';
