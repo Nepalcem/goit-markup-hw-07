@@ -14,7 +14,7 @@ body {
   text-decoration: none;
 }
 
-.project, .filters__list-item, .tmember-card, .work-example, .property-item, .contacts li, .menu__item {
+.project, .filters__list-item, .client-block__list-item, .social-icons__list-item, .tmember-card, .work-example, .property-item, .contacts li, .menu__item {
   list-style: none;
 }
 
@@ -575,7 +575,7 @@ main section:not(.banner) {
 }
 
 .footer {
-  background-color: #212121;
+  background-color: #2f303a;
 }
 .footer .container {
   display: flex;

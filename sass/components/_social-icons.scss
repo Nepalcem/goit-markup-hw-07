@@ -3,6 +3,9 @@
     justify-content: center;
     gap: 10px;
     @extend %list;
+    &__list-item {
+        @extend %list-item;
+    }
     &__link {
         @extend %link;
         display: flex;
