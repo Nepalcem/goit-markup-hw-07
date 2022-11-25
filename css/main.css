@@ -270,7 +270,7 @@ main section:not(.banner) {
 }
 
 .modal-close:hover {
-  color: var(--brand-color);
+  color: #2196f3;
 }
 
 .innermodal {
